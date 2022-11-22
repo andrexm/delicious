@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-secondary-50
+}
+
+
+/** Navbar */
+
+nav {
+    @apply bg-dark-800/80 text-dark-50 px-2 md:px-16 lg:px-32 flex justify-between
+}
+
+nav .navbar {
+    @apply hidden lg:flex
+}
+
+nav .mobile-navbar {
+    @apply lg:hidden
+}
