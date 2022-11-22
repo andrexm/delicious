@@ -10,15 +10,28 @@ body {
 /** Navbar */
 
 nav {
-    @apply bg-dark-800/80 text-dark-50 px-2 md:px-16 lg:px-32 flex justify-between py-6
+    @apply bg-dark-800/50 text-dark-50 px-2 md:px-16 lg:px-32 py-4 flex justify-between items-center
+        fixed top-0 left-0 right-0
 }
 
 nav .navbar {
-    @apply hidden lg:flex gap-7
+    @apply hidden lg:flex gap-7 items-center
 }
 
 nav .mobile-navbar {
     @apply lg:hidden
+}
+
+nav .mobile-navbar {
+    @apply fixed top-16 left-2 right-2 bg-dark-900 rounded-md grid lg:hidden
+}
+
+nav .mobile-navbar a {
+    @apply w-full block px-5 py-3
+}
+
+nav .navbar-toggle {
+    @apply text-xl lg:hidden
 }
 
 .navbar a.active {

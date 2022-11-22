@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Restaurant</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/lunar/css/lunar.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -13,17 +15,34 @@
         <div class="logo">
             <img src="" alt=""> Delicious
         </div>
+
+        <!-- Desktop Navbar -->
         <div class="navbar">
             <a href="" class="nav-item active">Home</a>
-            <a href="" class="nav-item">About</a>
-            <a href="" class="nav-item">Services</a>
-            <a href="" class="nav-item">Menu</a>
-            <a href="" class="nav-item">Contact</a>
-            <a href="" class="nav-item">About</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Menu</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
             <a href="#!" class="button line-primary">Book a Table</a>
         </div>
-        <div class="mobile-navbar">
-            mobile navbar
+
+        <!-- Mobile navbar -->
+        <div class="navbar-toggle" data-toggle=".mobile-navbar">
+            <i class="bi-list"></i>
+        </div>
+        <div class="mobile-navbar" hideable>
+            <a href="" class="nav-item active">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Menu</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="#!">Book a Table</a>
+            <div class="h-0.5 bg-dark-600"></div>
+            <div class="text-center py-3" data-toggle=".mobile-navbar">
+                <i class="bi-x-lg"></i>
+            </div>
         </div>
     </nav>
     <!-- End Navbar -->
@@ -50,5 +69,7 @@
         </div>
     </div>
     <!-- End Banner -->
+
+    <script src="assets/lunar/js/lunar.js"></script>
 </body>
 </html>
