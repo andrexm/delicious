@@ -54,7 +54,7 @@ nav .navbar-toggle {
 }
 
 .banner .cover-banner {
-    @apply h-full w-full bg-dark-900/70 flex items-center flex-wrap px-2 md:px-16 lg:px-32
+    @apply h-full w-full bg-dark-900/70 flex items-center justify-center lg:justify-start flex-wrap px-2 md:px-16 lg:px-32
 }
 
 
