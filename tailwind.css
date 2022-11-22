@@ -6,6 +6,10 @@ body {
     @apply bg-dark-900
 }
 
+section {
+    @apply px-2 md:px-16 lg:px-32 py-16 lg:py-20
+}
+
 
 /** Navbar */
 
