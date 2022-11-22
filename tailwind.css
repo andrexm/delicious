@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-secondary-50
+    @apply bg-dark-900
 }
 
 
@@ -27,4 +27,15 @@ nav .mobile-navbar {
 
 .navbar a {
     @apply hover:text-primary-300 transition duration-300
+}
+
+
+/** Banner */
+
+.banner {
+    @apply h-screen w-full bg-[url('./../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg')] bg-cover
+}
+
+.banner .cover-banner {
+    @apply h-full w-full bg-dark-900/70 flex items-center flex-wrap px-2 md:px-16 lg:px-32
 }
