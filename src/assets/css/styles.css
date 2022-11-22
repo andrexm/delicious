@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.table {
+  display: table;
+}
+
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
@@ -526,6 +530,8 @@ nav {
   background-color: rgb(41 37 36 / 0.8);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(250 250 249 / var(--tw-text-opacity));
 }
@@ -546,6 +552,7 @@ nav {
 
 nav .navbar {
   display: none;
+  gap: 1.75rem;
 }
 
 @media (min-width: 1024px) {
@@ -556,4 +563,22 @@ nav .navbar {
   nav .mobile-navbar {
     display: none;
   }
+}
+
+.navbar a.active {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+.navbar a {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.navbar a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
