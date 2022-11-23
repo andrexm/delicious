@@ -110,3 +110,14 @@ button.line-primary, .button.line-primary {
 .menu-item p {
     @apply text-dark-300
 }
+
+
+/** Events */
+
+.events {
+    @apply bg-[url('./../images/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg')] bg-fixed bg-cover
+}
+
+.events-cover {
+    @apply bg-dark-900/90
+}

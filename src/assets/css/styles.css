@@ -525,6 +525,14 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -570,6 +578,10 @@ video {
   flex-wrap: wrap;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -582,16 +594,12 @@ video {
   gap: 1.25rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-md {
@@ -655,6 +663,10 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -673,6 +685,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-medium {
@@ -718,6 +735,11 @@ video {
 .text-secondary-200 {
   --tw-text-opacity: 1;
   color: rgb(253 230 138 / var(--tw-text-opacity));
+}
+
+.text-dark-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity));
 }
 
 .opacity-80 {
@@ -1048,6 +1070,18 @@ button.line-primary:hover, .button.line-primary:hover {
 .menu-item p {
   --tw-text-opacity: 1;
   color: rgb(214 211 209 / var(--tw-text-opacity));
+}
+
+/** Events */
+
+.events {
+  background-image: url('./../images/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.events-cover {
+  background-color: rgb(28 25 23 / 0.9);
 }
 
 @media (min-width: 768px) {
