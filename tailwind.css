@@ -15,7 +15,7 @@ section {
 
 nav {
     @apply bg-dark-800/50 text-dark-50 px-2 md:px-16 lg:px-32 py-4 flex justify-between items-center
-        fixed top-0 left-0 right-0
+        fixed top-0 left-0 right-0 z-50
 }
 
 nav .navbar {
@@ -74,4 +74,39 @@ button.primary, .button.primary {
 
 button.line-primary, .button.line-primary {
     @apply bg-transparent ring-2 ring-primary-200 text-dark-100 hover:bg-primary-200 hover:text-dark-800
+}
+
+
+/** Menu Categories And Items */
+
+.menu-categories {
+    @apply flex justify-center flex-wrap gap-4 text-dark-300 mb-12
+}
+
+.menu-categories a {
+    @apply hover:text-secondary-200 transition duration-300
+}
+
+.menu-categories a.active {
+    @apply text-secondary-200
+}
+
+.menu-item {
+    @apply flex gap-6 text-dark-200 w-full
+}
+
+.menu-item img {
+    @apply w-24 h-24 rounded-full border-4 border-secondary-200/30
+}
+
+.menu-item .menu-item-title {
+    @apply font-bold text-lg flex justify-between w-full border-dashed border-b border-secondary-200 pb-2
+}
+
+.menu-item .menu-item-title span {
+    @apply text-secondary-200
+}
+
+.menu-item p {
+    @apply text-dark-300
 }
